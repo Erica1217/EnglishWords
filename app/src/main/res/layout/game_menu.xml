@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="홈"
+        android:layout_gravity="left"
+        android:id="@+id/home_btn" style="@style/button_font"
+        android:onClick="home_btn"
+        android:background="@drawable/button"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="외우기"
+        android:textSize="50dp"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="어떤 것으로 하실래요?"
+            android:textColor="#000000"></TextView>
+    </LinearLayout>
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="객관식"
+            android:id="@+id/study" style="@style/button_font"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="@drawable/button"
+            android:onClick="choice"
+            ></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="주관식"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:background="@drawable/button"
+            android:id="@+id/again" style="@style/button_font"
+            android:onClick="question"
+            ></Button>
+    </LinearLayout>
+</LinearLayout>
